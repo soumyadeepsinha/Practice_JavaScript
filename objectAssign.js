@@ -1,9 +1,18 @@
+// function assign(target, source) {
+//   return Object.entries(source).reduce((result, [key, value]) => {
+//     result[key] = value;
+//     return result;
+//   }, target);
+// }
+
+
 function assign(target, source) {
-  return Object.entries(source).reduce((result, [key, value]) => {
-    result[key] = value;
-    return result;
-  }, target);
+  Object.entries(source).forEach(([key, value]) => {
+    target[key] = value;
+    return target;
+  });
 }
+
 
 
 let person = { spouseName: 'Lisa Roots' };
