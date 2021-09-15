@@ -32,3 +32,18 @@ let newPersonProps = {
 assign(person, newPersonProps);
 
 console.log(person);
+
+const person2 = {
+  name: 'Jessica',
+  age: 34
+}
+
+console.log(person2);
+
+// we can change internal properties but not the assignment
+person2.age = 26;
+console.log(person2);
+
+Object.freeze(person2); //! freezing all the values of person2
+person2.age = 30;
+console.log(person2);
