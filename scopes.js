@@ -18,7 +18,7 @@ const chwingum = function () {
 
 chwingum()
 
-// defined the variable before calling the function
+// defined the variable before calling the function will work
 name = 'Coder Zico';
 
 takemyName();
